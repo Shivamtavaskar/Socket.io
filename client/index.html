@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket io</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        #message-container {
+            width: 80%;
+            height: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        #form {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        
+        #form label {
+            margin-bottom: 10px;
+        }
+        
+        #form input[type="text"],
+        #form input[type="submit"],
+        #form input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        #form input[type="submit"],
+        #form input[type="button"] {
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        #form input[type="submit"]:hover,
+        #form input[type="button"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="message-container"></div>
+    <form id="form">
+        <label for="message-input">Message</label>
+        <input type="text" id="message-input">
+        <button type="submit" id="send-button">Send</button>
+        <label for="room-input">Room</label>
+        <input type="text" id="room-input">
+        <button type="button" id="room-button">Join</button>
+    </form>
+    
+</body>
+</html>
